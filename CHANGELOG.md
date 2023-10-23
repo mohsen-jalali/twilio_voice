@@ -1,9 +1,14 @@
 ## Next release
 
+## 0.1.1
+
 * Fix: [Web] Multiple missed call notifications
 * Fix: [Android] `openPhoneAccountsSettings` not always opening on various Android (mainly Samsung) devices
 * Fix: Showing `CallDirection.outgoing` instead of `CallDirection.incoming` when Incoming call is ringing in `CallEventsListeners`.
 * Fix: `ActiveCall` is not null even after the Call is declined.
+* Fix: Android foreground service not starting on Android +11, many thanks to [@mohsen-jalali](https://github.com/mohsen-jalali)
+* Fix: Android foreground microphone permission not granted on Android +14.
+* Revert: [Android] allow registering clients with an empty name (supporting current implementation).
 
 ## 0.1.0
 
